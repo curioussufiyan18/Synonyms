@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services — Synonym Social</title>
+  <meta name="description" content="Full-service creative marketing: social media, content, SEO, branding, influencer campaigns, and website design.">
+  <link rel="stylesheet" href="assets/style.css" />
+  <style>
+    .service-detail {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+      margin-bottom: 2px;
+    }
+    .service-detail:nth-child(even) .service-detail-visual { order: -1; }
+    .service-detail-content {
+      padding: 5rem 4rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .service-detail-visual {
+      background: var(--dark-3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 380px;
+      position: relative;
+      overflow: hidden;
+    }
+    .service-visual-icon {
+      font-size: 6rem;
+      opacity: 0.15;
+    }
+    .service-visual-glow {
+      position: absolute;
+      width: 300px; height: 300px;
+      background: radial-gradient(circle, rgba(201,168,76,0.12) 0%, transparent 70%);
+    }
+    .service-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 1.5rem;
+    }
+    .service-tag {
+      font-family: var(--font-ui);
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--gold);
+      border: 1px solid rgba(201,168,76,0.25);
+      padding: 0.35rem 0.85rem;
+    }
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: rgba(201,168,76,0.1);
+      margin-top: 4rem;
+    }
+    .pricing-card {
+      background: var(--dark-2);
+      padding: 3rem 2.5rem;
+      position: relative;
+    }
+    .pricing-card.featured {
+      background: var(--dark-3);
+      border: 1px solid rgba(201,168,76,0.3);
+    }
+    .pricing-badge {
+      font-family: var(--font-ui);
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--dark);
+      background: var(--gold);
+      padding: 0.3rem 0.8rem;
+      display: inline-block;
+      margin-bottom: 1.25rem;
+    }
+    .pricing-name {
+      font-family: var(--font-display);
+      font-size: 1.8rem;
+      font-weight: 300;
+      color: var(--white);
+      margin-bottom: 0.5rem;
+    }
+    .pricing-desc {
+      font-size: 0.85rem;
+      color: var(--grey-400);
+      margin-bottom: 2rem;
+      line-height: 1.6;
+    }
+    .pricing-features {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      margin-bottom: 2.5rem;
+    }
+    .pricing-features li {
+      font-size: 0.85rem;
+      color: var(--grey-400);
+      display: flex;
+      gap: 0.75rem;
+      align-items: flex-start;
+    }
+    .pricing-features li::before {
+      content: '✓';
+      color: var(--gold);
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+    @media (max-width: 768px) {
+      .service-detail { grid-template-columns: 1fr; }
+      .service-detail:nth-child(even) .service-detail-visual { order: 0; }
+      .service-detail-content { padding: 3rem 2rem; }
+      .pricing-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<nav id="navbar">
+  <a href="index.html" class="nav-logo">Synonym<span>.</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <a href="contact.html" class="nav-cta">Free Brand Audit</a>
+  <div class="nav-toggle" id="navToggle"><span></span><span></span><span></span></div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="page-hero-glow"></div>
+  <div class="container">
+    <p class="section-label">What We Offer</p>
+    <h1>Six services.<br><em>One vision.</em></h1>
+    <p>Every offering is built around the same goal — helping your brand grow with intention, consistency, and creative excellence.</p>
+  </div>
+</section>
+
+<!-- SERVICE DETAILS -->
+<div style="background:var(--dark);">
+
+  <div class="service-detail reveal">
+    <div class="service-detail-content">
+      <p class="section-label">01</p>
+      <h2 class="section-title" style="color:var(--white);">Content <em>Creation</em></h2>
+      <p style="color:var(--grey-400); font-size:0.95rem; line-height:1.8; margin-bottom:1.5rem;">
+        Great content doesn't just look good — it tells a story. We handle everything from brand shoots and food photography to Instagram reels and TikTok content. Every visual is designed to stop the scroll and start a conversation.
+      </p>
+      <div class="service-tags">
+        <span class="service-tag">Brand Shoots</span>
+        <span class="service-tag">Food Photography</span>
+        <span class="service-tag">Instagram Content</span>
+        <span class="service-tag">TikTok Creatives</span>
+        <span class="service-tag">Visual Marketing</span>
+      </div>
+    </div>
+    <div class="service-detail-visual">
+      <div class="service-visual-glow"></div>
+      <span class="service-visual-icon">📸</span>
+    </div>
+  </div>
+
+  <div class="service-detail reveal">
+    <div class="service-detail-content">
+      <p class="section-label">02</p>
+      <h2 class="section-title" style="color:var(--white);">Content <em>Writing</em></h2>
+      <p style="color:var(--grey-400); font-size:0.95rem; line-height:1.8; margin-bottom:1.5rem;">
+        Words build brands. Our copywriters craft messaging that sounds like you, resonates with your audience, and performs on search. From website copy to weekly blogs, we keep your brand voice sharp and consistent.
+      </p>
+      <div class="service-tags">
+        <span class="service-tag">Copywriting</span>
+        <span class="service-tag">SEO Writing</span>
+        <span class="service-tag">Brand Messaging</span>
+        <span class="service-tag">Blogs</span>
+        <span class="service-tag">Email Copy</span>
+      </div>
+    </div>
+    <div class="service-detail-visual">
+      <div class="service-visual-glow"></div>
+      <span class="service-visual-icon">✍️</span>
+    </div>
+  </div>
+
+  <div class="service-detail reveal">
+    <div class="service-detail-content">
+      <p class="section-label">03</p>
+      <h2 class="section-title" style="color:var(--white);">Social <em>Media</em></h2>
+      <p style="color:var(--grey-400); font-size:0.95rem; line-height:1.8; margin-bottom:1.5rem;">
+        We manage your social presence end-to-end — strategy, content calendars, scheduling, community management, and trend research. Your audience grows. Your engagement climbs. You focus on running your business.
+      </p>
+      <div class="service-tags">
+        <span class="service-tag">Brand Awareness</span>
+        <span class="service-tag">Audience Growth</span>
+        <span class="service-tag">Engagement</span>
+        <span class="service-tag">Trend Research</span>
+        <span class="service-tag">Content Positioning</span>
+      </div>
+    </div>
+    <div class="service-detail-visual">
+      <div class="service-visual-glow"></div>
+      <span class="service-visual-icon">📱</span>
+    </div>
+  </div>
+
+  <div class="service-detail reveal">
+    <div class="service-detail-content">
+      <p class="section-label">04</p>
+      <h2 class="section-title" style="color:var(--white);">Search <em>SEO</em></h2>
+      <p style="color:var(--grey-400); font-size:0.95rem; line-height:1.8; margin-bottom:1.5rem;">
+        We optimize your web presence so customers find you first. Technical SEO, keyword strategy, on-page optimization, and link building — handled entirely behind the scenes so you see the results without the complexity.
+      </p>
+      <div class="service-tags">
+        <span class="service-tag">Website Optimization</span>
+        <span class="service-tag">Keyword Strategy</span>
+        <span class="service-tag">Organic Reach</span>
+        <span class="service-tag">Search Visibility</span>
+      </div>
+    </div>
+    <div class="service-detail-visual">
+      <div class="service-visual-glow"></div>
+      <span class="service-visual-icon">🔍</span>
+    </div>
+  </div>
+
+  <div class="service-detail reveal">
+    <div class="service-detail-content">
+      <p class="section-label">05</p>
+      <h2 class="section-title" style="color:var(--white);">Influencer <em>Marketing</em></h2>
+      <p style="color:var(--grey-400); font-size:0.95rem; line-height:1.8; margin-bottom:1.5rem;">
+        The right creator can do in one post what months of ads can't. We identify, vet, and manage influencer campaigns that put your brand in front of audiences who actually care — driving real engagement and brand exposure.
+      </p>
+      <div class="service-tags">
+        <span class="service-tag">Creator Campaigns</span>
+        <span class="service-tag">Audience Expansion</span>
+        <span class="service-tag">Demographic Reach</span>
+        <span class="service-tag">Brand Exposure</span>
+      </div>
+    </div>
+    <div class="service-detail-visual">
+      <div class="service-visual-glow"></div>
+      <span class="service-visual-icon">🤝</span>
+    </div>
+  </div>
+
+  <div class="service-detail reveal">
+    <div class="service-detail-content">
+      <p class="section-label">06</p>
+      <h2 class="section-title" style="color:var(--white);">Branding <em>& Design</em></h2>
+      <p style="color:var(--grey-400); font-size:0.95rem; line-height:1.8; margin-bottom:1.5rem;">
+        From logo to launch — we craft visual identities that are distinct, memorable, and built to scale. Logos, menus, flyers, business cards, and full website design, all built around a clear brand system.
+      </p>
+      <div class="service-tags">
+        <span class="service-tag">Logo Design</span>
+        <span class="service-tag">Menus & Flyers</span>
+        <span class="service-tag">Business Cards</span>
+        <span class="service-tag">Website Design</span>
+        <span class="service-tag">Brand Systems</span>
+      </div>
+    </div>
+    <div class="service-detail-visual">
+      <div class="service-visual-glow"></div>
+      <span class="service-visual-icon">🎨</span>
+    </div>
+  </div>
+
+</div>
+
+<!-- PRICING -->
+<section class="section section-dark">
+  <div class="container">
+    <div class="reveal">
+      <p class="section-label">Pricing</p>
+      <h2 class="section-title">Custom packages,<br><em>built for your brand</em></h2>
+      <p class="section-body">Every brand is different. We don't do one-size-fits-all pricing — we do retainer packages tailored to your goals, budget, and timeline. Start with a free brand audit.</p>
+    </div>
+    <div class="pricing-grid reveal">
+      <div class="pricing-card">
+        <div class="pricing-name">Starter</div>
+        <p class="pricing-desc">Perfect for new businesses getting their digital presence off the ground.</p>
+        <ul class="pricing-features">
+          <li>Social media strategy & setup</li>
+          <li>12 posts/month (2 platforms)</li>
+          <li>Basic brand identity review</li>
+          <li>Monthly performance report</li>
+          <li>Email support</li>
+        </ul>
+        <a href="contact.html" class="btn-ghost">Get a Quote</a>
+      </div>
+      <div class="pricing-card featured">
+        <div class="pricing-badge">Most Popular</div>
+        <div class="pricing-name">Growth</div>
+        <p class="pricing-desc">The full creative engine for brands ready to scale their online presence.</p>
+        <ul class="pricing-features">
+          <li>Full social media management</li>
+          <li>24 posts/month (3 platforms)</li>
+          <li>Content shoot (monthly)</li>
+          <li>SEO — on-page & technical</li>
+          <li>Influencer outreach (2/month)</li>
+          <li>Bi-weekly strategy calls</li>
+        </ul>
+        <a href="contact.html" class="btn-primary">Book a Consult</a>
+      </div>
+      <div class="pricing-card">
+        <div class="pricing-name">Premium</div>
+        <p class="pricing-desc">End-to-end brand management for established businesses and growing brands.</p>
+        <ul class="pricing-features">
+          <li>Everything in Growth</li>
+          <li>Full website design/redesign</li>
+          <li>Branding system & collateral</li>
+          <li>Influencer campaigns (5+/month)</li>
+          <li>Dedicated account manager</li>
+          <li>Weekly reporting & strategy</li>
+        </ul>
+        <a href="contact.html" class="btn-ghost">Get a Quote</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-band">
+  <div class="cta-band-glow"></div>
+  <div class="container" style="position:relative; z-index:1;">
+    <div class="reveal">
+      <p class="section-label" style="justify-content:center; display:flex;">Let's Talk</p>
+      <h2>Not sure which service<br>you <em>need?</em></h2>
+      <p>Start with a free brand audit. We'll tell you exactly what's working, what's not, and where to focus your energy.</p>
+      <a href="contact.html" class="btn-primary">Book Your Free Audit</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand-name">Synonym<span>.</span></div>
+        <p class="footer-desc">Toronto's not-so-typical creative marketing agency. Social-first strategy, premium creative, and campaigns that convert.</p>
+        <div class="footer-socials">
+          <a href="#" class="footer-social" aria-label="Instagram">IG</a>
+          <a href="#" class="footer-social" aria-label="Facebook">FB</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Services</div>
+        <ul class="footer-links">
+          <li><a href="services.html">Social Media</a></li>
+          <li><a href="services.html">Content Creation</a></li>
+          <li><a href="services.html">Branding & Design</a></li>
+          <li><a href="services.html">SEO</a></li>
+          <li><a href="services.html">Influencer Marketing</a></li>
+          <li><a href="services.html">Website Design</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Company</div>
+        <ul class="footer-links">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html">Free Brand Audit</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Get In Touch</div>
+        <ul class="footer-links">
+          <li><a href="mailto:connect@synonymsocial.com">connect@synonymsocial.com</a></li>
+          <li><a href="#">Toronto, Canada</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© <span>Synonym Social Inc.</span> 2025. All rights reserved.</p>
+      <p class="footer-copy" style="color:var(--grey-600);">Marketing That Converts.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    navbar.style.background = window.scrollY > 50 ? 'rgba(13,13,13,0.98)' : 'rgba(13,13,13,0.85)';
+  });
+  document.getElementById('navToggle').addEventListener('click', () => navbar.classList.toggle('open'));
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((e, i) => {
+      if (e.isIntersecting) { setTimeout(() => e.target.classList.add('visible'), i * 80); observer.unobserve(e.target); }
+    });
+  }, { threshold: 0.1 });
+  reveals.forEach(r => observer.observe(r));
+</script>
+</body>
+</html>

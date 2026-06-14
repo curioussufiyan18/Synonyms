@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Synonym Social</title>
+  <meta name="description" content="Book a free brand audit with Synonym Social. Toronto's creative marketing agency.">
+  <link rel="stylesheet" href="assets/style.css" />
+  <style>
+    .audit-benefits {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1px;
+      background: rgba(201,168,76,0.1);
+      margin-top: 3rem;
+    }
+    .audit-benefit {
+      background: var(--dark-3);
+      padding: 2rem;
+      display: flex;
+      gap: 1.25rem;
+      align-items: flex-start;
+    }
+    .audit-benefit-icon {
+      width: 40px; height: 40px;
+      background: rgba(201,168,76,0.1);
+      border: 1px solid rgba(201,168,76,0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      flex-shrink: 0;
+      color: var(--gold);
+    }
+    .audit-benefit-title {
+      font-family: var(--font-ui);
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--white);
+      margin-bottom: 0.3rem;
+    }
+    .audit-benefit-desc {
+      font-size: 0.8rem;
+      color: var(--grey-400);
+      line-height: 1.6;
+    }
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem;
+    }
+    .form-card {
+      background: var(--dark-3);
+      border: 1px solid rgba(201,168,76,0.12);
+      padding: 3rem;
+    }
+    .form-title {
+      font-family: var(--font-display);
+      font-size: 1.8rem;
+      font-weight: 300;
+      color: var(--white);
+      margin-bottom: 0.5rem;
+    }
+    .form-subtitle {
+      font-size: 0.88rem;
+      color: var(--grey-400);
+      margin-bottom: 2.5rem;
+      line-height: 1.6;
+    }
+    .success-msg {
+      display: none;
+      background: rgba(201,168,76,0.1);
+      border: 1px solid rgba(201,168,76,0.3);
+      padding: 1.5rem;
+      text-align: center;
+      margin-top: 1.5rem;
+    }
+    .success-msg p {
+      color: var(--gold);
+      font-family: var(--font-ui);
+      font-size: 0.88rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+    }
+    @media (max-width: 768px) {
+      .audit-benefits { grid-template-columns: 1fr; }
+      .form-row { grid-template-columns: 1fr; }
+      .form-card { padding: 2rem 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+<nav id="navbar">
+  <a href="index.html" class="nav-logo">Synonym<span>.</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <a href="contact.html" class="nav-cta">Free Brand Audit</a>
+  <div class="nav-toggle" id="navToggle"><span></span><span></span><span></span></div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="page-hero-glow"></div>
+  <div class="container">
+    <p class="section-label">Get In Touch</p>
+    <h1>Let's talk about<br>your <em>brand.</em></h1>
+    <p>Start with a free 30-minute brand audit — no pitch, no pressure. Just honest insight into where your brand stands and where it can go.</p>
+  </div>
+</section>
+
+<!-- MAIN CONTACT SECTION -->
+<section class="section section-dark">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- LEFT: Info -->
+      <div class="reveal">
+        <p class="section-label">What You'll Get</p>
+        <h2 class="section-title" style="color:var(--white);">Your free <em>brand audit</em></h2>
+        <p style="color:var(--grey-400); font-size:0.92rem; line-height:1.8;">A 30-minute deep-dive into your current brand presence — what's working, what's not, and exactly where to focus to drive real growth.</p>
+
+        <div class="audit-benefits">
+          <div class="audit-benefit">
+            <div class="audit-benefit-icon">📊</div>
+            <div>
+              <div class="audit-benefit-title">Social Media Audit</div>
+              <p class="audit-benefit-desc">We review your current content, engagement, and positioning across platforms.</p>
+            </div>
+          </div>
+          <div class="audit-benefit">
+            <div class="audit-benefit-icon">🎯</div>
+            <div>
+              <div class="audit-benefit-title">Brand Clarity Check</div>
+              <p class="audit-benefit-desc">Is your messaging clear, consistent, and connecting with the right audience?</p>
+            </div>
+          </div>
+          <div class="audit-benefit">
+            <div class="audit-benefit-icon">🔍</div>
+            <div>
+              <div class="audit-benefit-title">SEO Quick Scan</div>
+              <p class="audit-benefit-desc">A surface-level look at how you're showing up (or not) in search results.</p>
+            </div>
+          </div>
+          <div class="audit-benefit">
+            <div class="audit-benefit-icon">💡</div>
+            <div>
+              <div class="audit-benefit-title">Growth Opportunities</div>
+              <p class="audit-benefit-desc">3 specific, actionable areas where your brand can grow — starting now.</p>
+            </div>
+          </div>
+        </div>
+
+        <ul class="contact-info-list" style="margin-top:3rem;">
+          <li>
+            <div class="contact-icon">✉</div>
+            <div>
+              <div class="contact-detail-label">Email</div>
+              <div class="contact-detail-value"><a href="mailto:connect@synonymsocial.com" style="color:inherit; text-decoration:none;">connect@synonymsocial.com</a></div>
+            </div>
+          </li>
+          <li>
+            <div class="contact-icon">📍</div>
+            <div>
+              <div class="contact-detail-label">Location</div>
+              <div class="contact-detail-value">Toronto, Ontario, Canada</div>
+            </div>
+          </li>
+          <li>
+            <div class="contact-icon">📱</div>
+            <div>
+              <div class="contact-detail-label">Social</div>
+              <div class="contact-detail-value">
+                <a href="#" style="color:var(--gold); text-decoration:none; margin-right:1rem;">Instagram</a>
+                <a href="#" style="color:var(--gold); text-decoration:none;">Facebook</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- RIGHT: Form -->
+      <div class="reveal">
+        <div class="form-card">
+          <div class="form-title">Book Your Audit</div>
+          <p class="form-subtitle">Fill in a few details and we'll reach out within 24 hours to confirm your session.</p>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" placeholder="Jane" />
+            </div>
+            <div class="form-group">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" placeholder="Doe" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="jane@yourbrand.com" />
+          </div>
+
+          <div class="form-group">
+            <label for="brand">Brand / Business Name</label>
+            <input type="text" id="brand" placeholder="Your Brand Co." />
+          </div>
+
+          <div class="form-group">
+            <label for="industry">Industry</label>
+            <select id="industry">
+              <option value="" disabled selected>Select your industry</option>
+              <option>Restaurant / Food & Beverage</option>
+              <option>Fashion & Apparel</option>
+              <option>Wellness & Health</option>
+              <option>Retail / E-Commerce</option>
+              <option>Local Services</option>
+              <option>Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="service">Primary Service Needed</label>
+            <select id="service">
+              <option value="" disabled selected>What are you looking for?</option>
+              <option>Social Media Management</option>
+              <option>Content Creation</option>
+              <option>Branding & Design</option>
+              <option>SEO</option>
+              <option>Influencer Marketing</option>
+              <option>Website Design</option>
+              <option>Full Agency Partnership</option>
+              <option>Not sure — need guidance</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Anything else we should know?</label>
+            <textarea id="message" placeholder="Tell us about your brand, your goals, or your challenges..."></textarea>
+          </div>
+
+          <button class="btn-primary" id="submitBtn" style="width:100%; border:none; cursor:pointer; font-size:0.8rem; padding:1.1rem;">
+            Book My Free Audit →
+          </button>
+
+          <div class="success-msg" id="successMsg">
+            <p>✓ Request received! We'll be in touch within 24 hours.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section section-grey">
+  <div class="container" style="max-width:760px;">
+    <div class="reveal">
+      <p class="section-label">FAQ</p>
+      <h2 class="section-title">Common <em>questions</em></h2>
+    </div>
+    <div style="margin-top:3rem;">
+      <div class="reveal" style="border-bottom:1px solid var(--grey-200); padding-bottom:2rem; margin-bottom:2rem;">
+        <h3 style="font-family:var(--font-ui); font-size:0.95rem; font-weight:600; color:var(--grey-800); margin-bottom:0.75rem;">Is the brand audit really free?</h3>
+        <p style="font-size:0.88rem; color:var(--grey-600); line-height:1.7;">Yes — completely. No hidden fees, no credit card required. We do this because we believe in showing value before asking for anything in return.</p>
+      </div>
+      <div class="reveal" style="border-bottom:1px solid var(--grey-200); padding-bottom:2rem; margin-bottom:2rem;">
+        <h3 style="font-family:var(--font-ui); font-size:0.95rem; font-weight:600; color:var(--grey-800); margin-bottom:0.75rem;">How long does the audit take?</h3>
+        <p style="font-size:0.88rem; color:var(--grey-600); line-height:1.7;">The session itself is 30 minutes over a call. We prep beforehand so we can make every minute count for you.</p>
+      </div>
+      <div class="reveal" style="border-bottom:1px solid var(--grey-200); padding-bottom:2rem; margin-bottom:2rem;">
+        <h3 style="font-family:var(--font-ui); font-size:0.95rem; font-weight:600; color:var(--grey-800); margin-bottom:0.75rem;">Do you work with small businesses?</h3>
+        <p style="font-size:0.88rem; color:var(--grey-600); line-height:1.7;">Absolutely. Some of our best work has been helping small local brands punch well above their weight online. We love early-stage growth challenges.</p>
+      </div>
+      <div class="reveal">
+        <h3 style="font-family:var(--font-ui); font-size:0.95rem; font-weight:600; color:var(--grey-800); margin-bottom:0.75rem;">What does a retainer look like?</h3>
+        <p style="font-size:0.88rem; color:var(--grey-600); line-height:1.7;">Every package is custom-built. After the audit, we'll propose a retainer based on your specific goals, services needed, and budget. No forced packages.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand-name">Synonym<span>.</span></div>
+        <p class="footer-desc">Toronto's not-so-typical creative marketing agency. Social-first strategy, premium creative, and campaigns that convert.</p>
+        <div class="footer-socials">
+          <a href="#" class="footer-social" aria-label="Instagram">IG</a>
+          <a href="#" class="footer-social" aria-label="Facebook">FB</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Services</div>
+        <ul class="footer-links">
+          <li><a href="services.html">Social Media</a></li>
+          <li><a href="services.html">Content Creation</a></li>
+          <li><a href="services.html">Branding & Design</a></li>
+          <li><a href="services.html">SEO</a></li>
+          <li><a href="services.html">Influencer Marketing</a></li>
+          <li><a href="services.html">Website Design</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Company</div>
+        <ul class="footer-links">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html">Free Brand Audit</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Get In Touch</div>
+        <ul class="footer-links">
+          <li><a href="mailto:connect@synonymsocial.com">connect@synonymsocial.com</a></li>
+          <li><a href="#">Toronto, Canada</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© <span>Synonym Social Inc.</span> 2025. All rights reserved.</p>
+      <p class="footer-copy" style="color:var(--grey-600);">Marketing That Converts.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    navbar.style.background = window.scrollY > 50 ? 'rgba(13,13,13,0.98)' : 'rgba(13,13,13,0.85)';
+  });
+  document.getElementById('navToggle').addEventListener('click', () => navbar.classList.toggle('open'));
+
+  document.getElementById('submitBtn').addEventListener('click', () => {
+    const email = document.getElementById('email').value.trim();
+    const brand = document.getElementById('brand').value.trim();
+    if (!email || !brand) {
+      alert('Please fill in your email and brand name to continue.');
+      return;
+    }
+    document.getElementById('submitBtn').textContent = 'Sending...';
+    setTimeout(() => {
+      document.getElementById('submitBtn').style.display = 'none';
+      document.getElementById('successMsg').style.display = 'block';
+    }, 1000);
+  });
+
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((e, i) => {
+      if (e.isIntersecting) { setTimeout(() => e.target.classList.add('visible'), i * 80); observer.unobserve(e.target); }
+    });
+  }, { threshold: 0.1 });
+  reveals.forEach(r => observer.observe(r));
+</script>
+</body>
+</html>

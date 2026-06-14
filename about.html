@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Synonym Social</title>
+  <meta name="description" content="The story behind Synonym Social — Toronto's creative marketing agency built for modern brands.">
+  <link rel="stylesheet" href="assets/style.css" />
+  <style>
+    .team-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: var(--grey-200);
+      margin-top: 4rem;
+    }
+    .team-card {
+      background: var(--white);
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+    .team-avatar {
+      width: 90px; height: 90px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--gold-muted), var(--gold));
+      margin: 0 auto 1.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-display);
+      font-size: 2rem;
+      font-weight: 300;
+      color: var(--dark);
+    }
+    .team-name {
+      font-family: var(--font-ui);
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--grey-800);
+      margin-bottom: 0.25rem;
+    }
+    .team-role {
+      font-size: 0.8rem;
+      color: var(--gold);
+      font-family: var(--font-ui);
+      letter-spacing: 0.08em;
+    }
+    .timeline {
+      position: relative;
+      margin-top: 4rem;
+      padding-left: 3rem;
+    }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 0; top: 0; bottom: 0;
+      width: 1px;
+      background: linear-gradient(to bottom, var(--gold), transparent);
+    }
+    .timeline-item {
+      position: relative;
+      margin-bottom: 3rem;
+    }
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -3rem;
+      top: 0.35rem;
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: var(--gold);
+      transform: translateX(-3.5px);
+    }
+    .timeline-year {
+      font-family: var(--font-ui);
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 0.4rem;
+    }
+    .timeline-event {
+      font-family: var(--font-display);
+      font-size: 1.3rem;
+      font-weight: 400;
+      color: var(--white);
+      margin-bottom: 0.4rem;
+    }
+    .timeline-detail {
+      font-size: 0.85rem;
+      color: var(--grey-400);
+      line-height: 1.6;
+    }
+    .industries-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      background: rgba(201,168,76,0.1);
+      margin-top: 3rem;
+    }
+    .industry-item {
+      background: var(--dark-2);
+      padding: 2rem;
+      text-align: center;
+    }
+    .industry-icon { font-size: 2rem; margin-bottom: 0.75rem; display: block; }
+    .industry-name {
+      font-family: var(--font-ui);
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      color: var(--grey-200);
+    }
+    @media (max-width: 768px) {
+      .team-row { grid-template-columns: 1fr; }
+      .industries-grid { grid-template-columns: repeat(2, 1fr); }
+      .timeline { padding-left: 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+<nav id="navbar">
+  <a href="index.html" class="nav-logo">Synonym<span>.</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <a href="contact.html" class="nav-cta">Free Brand Audit</a>
+  <div class="nav-toggle" id="navToggle"><span></span><span></span><span></span></div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="page-hero-glow"></div>
+  <div class="container">
+    <p class="section-label">Our Story</p>
+    <h1>The <em>not-so-typical</em><br>creative agency.</h1>
+    <p>Built in Toronto. Driven by results. Obsessed with your brand's potential.</p>
+  </div>
+</section>
+
+<!-- ORIGIN STORY -->
+<section class="section section-grey">
+  <div class="container">
+    <div class="about-split">
+      <div class="reveal">
+        <p class="section-label">How It Started</p>
+        <h2 class="section-title">We saw a gap.<br><em>We filled it.</em></h2>
+        <p class="section-body">Too many great brands were getting cookie-cutter strategies from agencies that didn't take the time to understand them. We started Synonym Social to fix that.</p>
+        <p class="section-body" style="margin-top:1rem;">We built an agency rooted in social-first thinking, premium creative, and strategy that's actually customized — not templated. Every campaign, every caption, every pixel is intentional.</p>
+        <p class="section-body" style="margin-top:1rem;">Based in Toronto, we work with restaurants, fashion brands, wellness companies, and modern consumer businesses who want to grow with purpose.</p>
+      </div>
+      <div class="reveal">
+        <div class="about-card" style="background:var(--dark-3); border:1px solid rgba(201,168,76,0.15);">
+          <div class="about-card-accent"></div>
+          <p class="about-quote" style="color:var(--white);">"We don't just market your brand — we become fluent in it."</p>
+          <p class="about-tag" style="margin-bottom:2rem;">Our philosophy</p>
+          <div class="values-list">
+            <li style="color:var(--grey-400);">Brand clarity before content</li>
+            <li style="color:var(--grey-400);">Strategy before execution</li>
+            <li style="color:var(--grey-400);">Consistency over campaigns</li>
+            <li style="color:var(--grey-400);">Results over vanity metrics</li>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MILESTONE TIMELINE -->
+<section class="section section-mid">
+  <div class="container">
+    <div class="reveal">
+      <p class="section-label">Our Journey</p>
+      <h2 class="section-title" style="color:var(--white);">Built one brand<br><em>at a time</em></h2>
+    </div>
+    <div class="about-split" style="margin-top:3rem;">
+      <div class="timeline reveal">
+        <div class="timeline-item">
+          <div class="timeline-year">The Beginning</div>
+          <div class="timeline-event">Founded in Toronto</div>
+          <p class="timeline-detail">Started with a clear mission — help local brands communicate better and grow faster through social-first marketing.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">Early Growth</div>
+          <div class="timeline-event">First 10 Brand Partnerships</div>
+          <p class="timeline-detail">Worked with food brands, wellness companies, and local businesses across the Greater Toronto Area.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">Expansion</div>
+          <div class="timeline-event">Miniso, Brar's & Fashion Week</div>
+          <p class="timeline-detail">Expanded into larger brand collaborations including Miniso Canada, Brar's, and Toronto Kids Fashion Week.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">Today</div>
+          <div class="timeline-event">50+ Brands & Growing</div>
+          <p class="timeline-detail">A full-service creative agency serving restaurants, fashion brands, wellness companies, and consumer brands across North America.</p>
+        </div>
+      </div>
+      <div class="reveal" style="padding-top:1rem;">
+        <div class="stats-row" style="margin-top:0; grid-template-columns:1fr 1fr;">
+          <div class="stat-item">
+            <div class="stat-number">50+</div>
+            <div class="stat-label">Brands Grown</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">3M+</div>
+            <div class="stat-label">Impressions</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">6</div>
+            <div class="stat-label">Services</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">YYZ</div>
+            <div class="stat-label">Toronto Based</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INDUSTRIES -->
+<section class="section section-dark">
+  <div class="container">
+    <div class="reveal">
+      <p class="section-label">Who We Serve</p>
+      <h2 class="section-title">Industries we <em>know deeply</em></h2>
+      <p class="section-body">We don't market every industry. We've gone deep in the ones that matter most to us — and where we can drive the most impact.</p>
+    </div>
+    <div class="industries-grid reveal">
+      <div class="industry-item">
+        <span class="industry-icon">🍽️</span>
+        <div class="industry-name">Restaurants & Food</div>
+      </div>
+      <div class="industry-item">
+        <span class="industry-icon">👗</span>
+        <div class="industry-name">Fashion & Apparel</div>
+      </div>
+      <div class="industry-item">
+        <span class="industry-icon">🌿</span>
+        <div class="industry-name">Wellness & Health</div>
+      </div>
+      <div class="industry-item">
+        <span class="industry-icon">🏪</span>
+        <div class="industry-name">Local Businesses</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="section section-grey">
+  <div class="container">
+    <div class="reveal">
+      <p class="section-label">How We Work</p>
+      <h2 class="section-title">Our process,<br><em>simplified</em></h2>
+    </div>
+    <div class="process-list reveal">
+      <div class="process-step" data-step="STEP 01" style="background:var(--dark); border:none;">
+        <div class="process-num">01</div>
+        <div class="process-title">Brand Audit</div>
+        <p class="process-desc">We start with a deep-dive into your brand — what's working, what's missing, and where the biggest opportunities lie.</p>
+      </div>
+      <div class="process-step" data-step="STEP 02" style="background:var(--dark); border:none;">
+        <div class="process-num">02</div>
+        <div class="process-title">Strategy Build</div>
+        <p class="process-desc">Custom strategy built around your audience, goals, and budget. No templates. No guesswork.</p>
+      </div>
+      <div class="process-step" data-step="STEP 03" style="background:var(--dark); border:none;">
+        <div class="process-num">03</div>
+        <div class="process-title">Creative Execution</div>
+        <p class="process-desc">We produce, publish, and manage everything — content, copy, campaigns, and design — with precision and speed.</p>
+      </div>
+      <div class="process-step" data-step="STEP 04" style="background:var(--dark); border:none;">
+        <div class="process-num">04</div>
+        <div class="process-title">Optimize & Scale</div>
+        <p class="process-desc">Regular reporting, strategy refinement, and scaling what works — so your results compound over time.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-band">
+  <div class="cta-band-glow"></div>
+  <div class="container" style="position:relative; z-index:1;">
+    <div class="reveal">
+      <p class="section-label" style="justify-content:center; display:flex;">Work With Us</p>
+      <h2>Let's build something<br><em>worth talking about.</em></h2>
+      <p>Ready to find out what your brand could look like at its best? Start with a free audit.</p>
+      <a href="contact.html" class="btn-primary">Book a Free Brand Audit</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand-name">Synonym<span>.</span></div>
+        <p class="footer-desc">Toronto's not-so-typical creative marketing agency. Social-first strategy, premium creative, and campaigns that convert.</p>
+        <div class="footer-socials">
+          <a href="#" class="footer-social" aria-label="Instagram">IG</a>
+          <a href="#" class="footer-social" aria-label="Facebook">FB</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Services</div>
+        <ul class="footer-links">
+          <li><a href="services.html">Social Media</a></li>
+          <li><a href="services.html">Content Creation</a></li>
+          <li><a href="services.html">Branding & Design</a></li>
+          <li><a href="services.html">SEO</a></li>
+          <li><a href="services.html">Influencer Marketing</a></li>
+          <li><a href="services.html">Website Design</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Company</div>
+        <ul class="footer-links">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html">Free Brand Audit</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Get In Touch</div>
+        <ul class="footer-links">
+          <li><a href="mailto:connect@synonymsocial.com">connect@synonymsocial.com</a></li>
+          <li><a href="#">Toronto, Canada</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© <span>Synonym Social Inc.</span> 2025. All rights reserved.</p>
+      <p class="footer-copy" style="color:var(--grey-600);">Marketing That Converts.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    navbar.style.background = window.scrollY > 50 ? 'rgba(13,13,13,0.98)' : 'rgba(13,13,13,0.85)';
+  });
+  document.getElementById('navToggle').addEventListener('click', () => navbar.classList.toggle('open'));
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((e, i) => {
+      if (e.isIntersecting) { setTimeout(() => e.target.classList.add('visible'), i * 80); observer.unobserve(e.target); }
+    });
+  }, { threshold: 0.1 });
+  reveals.forEach(r => observer.observe(r));
+</script>
+</body>
+</html>
